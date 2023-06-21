@@ -1,0 +1,104 @@
+.memory-game {
+  display: flex;
+  justify-content: center;
+  height: 25vh;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.card {
+  width: 150px;
+  height:150px;
+  background-color: blue;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  transition: background-color 0.3s ease;
+}
+
+.hidden {
+  background-color: grey;
+  background-image: none;
+}
+
+.matched {
+  background-color: green;
+}
+
+[data-card="1.jpg"] {
+  background-image: url("1.jpg");
+}
+
+[data-card="2.jpg"] {
+  background-image: url("2.jpg");
+}
+
+[data-card="3.jpg"] {
+  background-image: url("3.jpg");
+}
+
+[data-card="4.jpg"] {
+  background-image: url("4.jpg");
+}
+
+[data-card="5.jpg"] {
+  background-image: url("5.jpg");
+}
+
+[data-card="6.jpg"] {
+  background-image: url("6.jpg");
+}
+
+[data-card="7.jpg"] {
+  background-image: url("7.jpg");
+}
+
+
+[data-card="8.jpg"] {
+  background-image: url("8.jpg");
+}
+
+
+
+[data-card="9.jpg"] {
+  background-image: url("9.jpg");
+}
+
+[data-card="10.jpg"] {
+  background-image: url("10.jpg");
+}
+
+.card {
+  background-color: hotpink;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  transition: background-color 0.3s ease;
+  border: 2px solid white; /* Add a border */
+  box-sizing: border-box; /* Ensure the border is included in the card dimensions */
+  width: 200px; /* Set the width of the card */
+  height: 150px; /* Set the height of the card */
+}
+
+body {
+  background-image: url("background.jpg");
+}
+.card.hidden {
+  background-color: gray;
+  background-image: none;
+  border: 10px solid white; /* Add a border around the hidden cards */
+  }
+h1 {
+
+color: white
+}
+.message {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
